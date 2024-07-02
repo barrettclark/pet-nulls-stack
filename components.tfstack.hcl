@@ -9,6 +9,14 @@ variable "instances" {
   type = number
 }
 
+variable "username" {
+  type = string
+}
+
+variable "animal_count" {
+  type = number
+}
+
 required_providers {
   random = {
     source  = "hashicorp/random"
@@ -29,6 +37,8 @@ component "pet" {
 
   inputs = {
     prefix = var.prefix
+    username = var.username
+    animal_count = var.animal_count
   }
 
   providers = {

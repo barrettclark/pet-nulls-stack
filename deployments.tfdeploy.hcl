@@ -6,6 +6,7 @@ deployment "simple" {
     prefix           = "simple"
     instances        = 1
     username         = "bclar"
+    animal_count     = 2
   }
 }
 
@@ -14,5 +15,6 @@ deployment "complex" {
     prefix           = "complex"
     instances        = 3
     username         = "abcxyz"
+    animal_count     = 27
   }
 }
