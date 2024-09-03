@@ -52,6 +52,7 @@ component "nulls" {
   inputs = {
     pet       = component.pet.name
     instances = var.instances
+    username = var.username
   }
 
   providers = {

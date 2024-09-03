@@ -13,6 +13,7 @@ terraform {
 variable "prefix" {
   type = string
 }
+variable "animal_count" {}
 
 resource "random_pet" "this" {
   prefix = var.prefix
