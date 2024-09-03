@@ -20,15 +20,8 @@ resource "random_pet" "this" {
   length = 3
 }
 
-resource "random_pet" "always_new" {
-  keepers = {
-    uuid = uuid() # Force a new name each time
-  }
-  length = var.animal_count
-}
-
 resource "random_pet" "tg" {
-  count = 25
+  count = var.animal_count
 
   separator = "-"
   length    = 2
